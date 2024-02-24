@@ -1,15 +1,11 @@
-const autoBind = require('auto-bind');
+module.exports = {
 
-class Script {
-  constructor(config) {
-    config = Object.assign({}, config);
-    this._name = config.name || 'script';
+    globals: {
+        MyGlobal: true
+    },
 
-    autoBind(this);
-  }
-  renderName() {
-    return this._name;
-  }
-}
+    rules: {
+        semi: [2, "always"]
+    }
 
-module.exports = Script;
+};

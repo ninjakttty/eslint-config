@@ -10,7 +10,6 @@
   "contributors": [
     "Yuri A. Parsons <yuri@ninjakitty.net> (http://ninjakitty.net/)"
   ],
-  "dependencies": {},
   "ava": {
     "failFast": true,
     "verbose": true
@@ -35,14 +34,19 @@
     "node": ">=8.3"
   },
   "homepage": "https://github.com/ninjakttty/eslint-config",
-  "keywords": ["@ninjakttty/eslint-config"],
+  "keywords": [
+    "@ninjakttty/eslint-config"
+  ],
   "license": "MIT",
   "lint-staged": {
     "*.{js,jsx,mjs,ts,tsx,css,less,scss,json,graphql}": [
       "prettier --write --single-quote --trailing-comma none",
       "git add"
     ],
-    "*.md": ["remark . -qfo", "git add"]
+    "*.md": [
+      "remark . -qfo",
+      "git add"
+    ]
   },
   "main": "index.js",
   "nyc": {
@@ -50,10 +54,16 @@
     "lines": 100,
     "functions": 100,
     "branches": 100,
-    "reporter": ["lcov", "html", "text"]
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
   },
   "remarkConfig": {
-    "plugins": ["preset-github"]
+    "plugins": [
+      "preset-github"
+    ]
   },
   "repository": {
     "type": "git",
@@ -68,7 +78,9 @@
   },
   "xo": {
     "extends": "prettier",
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "parserOptions": {
       "sourceType": "script"
     },
